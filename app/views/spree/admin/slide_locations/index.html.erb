@@ -20,7 +20,7 @@
       <td class="align-center"><%= location.name %></td>
       <td class="align-center">
          <% if location.fallback_slide %>
-           <%= image_tag location.fallback_slide.try(:slide_image), style: 'width: 120px; height: auto;' %>
+           <%= image_tag location.fallback_slide.slide_image, style: 'width: 120px; height: auto;' %>
            <%= link_to location.fallback_slide.name, admin_slide_path(location.fallback_slide) %>
          <% else %>
            None
